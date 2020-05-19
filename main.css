@@ -1,4 +1,10 @@
 h1 {
-  font-size: 500px;
+  font-size: 75px;
+  font-family: "arial";
+}
+
+h2 {
+  font-color: "DarkGrey";
+  font-size: 50px;
   font-family: "arial";
 }
