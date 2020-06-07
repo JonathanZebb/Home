@@ -10,18 +10,18 @@ h2 {
 }
 
 section {
-	display: inline-block;
+  display: inline-block;
   width: 35%;
-	padding: 2%;
+  padding: 2%;
 }
 
 .banner, .content {
   display: inline-block;
-	text-align: center;
+  text-align: center;
   margin: 0;
   width: 100%;
 }
 
 span {
-	display: inline-block;
+  display: inline-block;
 }
