@@ -1,27 +1,44 @@
 h1 {
-  font-size: 75px;
-  font-family: "arial";
-}
+  font-size: 100px;
+  font-family: "Courier New", Courier, monospace; }
 
 h2 {
   color: slategrey;
-  font-size: 50px;
-  font-family: "arial";
-}
+  font-size: 75px;
+  font-family: "Courier New", Courier, monospace; }
 
-section {
-	display: inline-block;
-  width: 35%;
-	padding: 2%;
-}
-
-.banner, .content {
+.content {
   display: inline-block;
-	text-align: center;
+  width: 35%;
+  margin: 2%;
+  position: relative; }
+
+.banner, .content-container {
+  display: inline-block;
+  text-align: center;
   margin: 0;
-  width: 100%;
-}
+  width: 100%; }
 
 span {
-	display: inline-block;
-}
+  display: inline-block; }
+
+.content-image {
+  transition: transform .5s;
+  width: 100%;
+  overflow: hidden; }
+
+.content-link:hover .content-image {
+  transform: scale(1.125);
+  overflow: hidden; }
+
+.content-title {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  vertical-align: middle;
+  color: whitesmoke;
+  font-size: 100px;
+  font-family: "Courier New", Courier, monospace; }
+
+/*# sourceMappingURL=main.css.map */
