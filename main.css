@@ -7,11 +7,19 @@ h2 {
   font-size: 75px;
   font-family: "Courier New", Courier, monospace; }
 
+<<<<<<< HEAD
 .content {
   display: inline-block;
   width: 35%;
   margin: 2%;
   position: relative; }
+=======
+section {
+  display: inline-block;
+  width: 35%;
+  padding: 2%;
+}
+>>>>>>> 8dd9266fa7bbaef29905a499c6eaa158ca23548e
 
 .banner, .content-container {
   display: inline-block;
@@ -20,16 +28,16 @@ h2 {
   width: 100%; }
 
 span {
+<<<<<<< HEAD
   display: inline-block; }
 
 .content-image {
-  transition: transform .5s;
+  transition: transform .2s;
   width: 100%;
   overflow: hidden; }
 
 .content-link:hover .content-image {
-  transform: scale(1.125);
-  overflow: hidden; }
+  transform: scale(1.125); }
 
 .content-title {
   position: absolute;
@@ -42,3 +50,7 @@ span {
   font-family: "Courier New", Courier, monospace; }
 
 /*# sourceMappingURL=main.css.map */
+=======
+  display: inline-block;
+}
+>>>>>>> 8dd9266fa7bbaef29905a499c6eaa158ca23548e
