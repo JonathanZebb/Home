@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box; }
+
 h1 {
   font-size: 100px;
   font-family: "Courier New", Courier, monospace; }
@@ -11,13 +14,15 @@ h2 {
   display: inline-block;
   width: 35%;
   margin: 2%;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
 
 .banner, .content-container {
   display: inline-block;
   text-align: center;
   margin: 0;
-  width: 100%; }
+  width: 100%;
+  overflow: hidden; }
 
 span {
   display: inline-block; }
@@ -25,7 +30,10 @@ span {
 .content-image {
   transition: transform .2s;
   width: 100%;
-  overflow: hidden; }
+  max-width: 100%;
+  display: block;
+  height: auto;
+  transform: scale(1); }
 
 .content-link:hover .content-image {
   transform: scale(1.125); }
@@ -39,5 +47,26 @@ span {
   color: whitesmoke;
   font-size: 100px;
   font-family: "Courier New", Courier, monospace; }
+
+/*image-container {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}*/
+/*.image-box {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    width: 540px;
+}
+
+img {
+    max-width: 100%;
+    transition: all 0.3s;
+    display: block;
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+}*/
 
 /*# sourceMappingURL=main.css.map */
