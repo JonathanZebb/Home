@@ -1,72 +1,44 @@
 * {
-  box-sizing: border-box; }
-
-h1 {
-  font-size: 100px;
-  font-family: "Courier New", Courier, monospace; }
-
-h2 {
-  color: slategrey;
-  font-size: 75px;
-  font-family: "Courier New", Courier, monospace; }
-
-.content {
-  display: inline-block;
-  width: 35%;
-  margin: 2%;
-  position: relative;
-  overflow: hidden; }
-
-.banner, .content-container {
-  display: inline-block;
-  text-align: center;
-  margin: 0;
-  width: 100%;
-  overflow: hidden; }
-
-span {
-  display: inline-block; }
-
-.content-image {
-  transition: transform .2s;
-  width: 100%;
-  max-width: 100%;
-  display: block;
-  height: auto;
-  transform: scale(1); }
-
-.content-link:hover .content-image {
-  transform: scale(1.125); }
-
-.content-title {
-  position: absolute;
-  text-align: center;
-  width: 100%;
-  top: 50%;
-  vertical-align: middle;
-  color: whitesmoke;
-  font-size: 100px;
-  font-family: "Courier New", Courier, monospace; }
-
-/*image-container {
-    position: relative;
-    margin: auto;
-    overflow: hidden;
-}*/
-/*.image-box {
-    position: relative;
-    margin: auto;
-    overflow: hidden;
-    width: 540px;
+  box-sizing: border-box;
 }
 
-img {
-    max-width: 100%;
-    transition: all 0.3s;
-    display: block;
-    width: 100%;
-    height: auto;
-    transform: scale(1);
-}*/
+body {
+  margin: 0px;
+}
 
-/*# sourceMappingURL=main.css.map */
+.hero-container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr;
+}
+
+@media (max-width: 800px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+}
+
+.hero-segment {
+  display: grid;
+  place-items: center;
+  background-color: steelblue;
+  
+  color: white;
+  font-family: "Varela Round";
+  font-size: 75px;
+  
+  grid-column: auto / span 2;
+  grid-row: auto / span 2;
+}
+
+.hero-segment:hover {
+  grid-column: auto / span 4;
+  grid-row: auto / span 4;
+}
+
+ .hero-container:hover .hero-segment:not(:hover) {
+  grid-column: auto / span 1;
+  grid-row: auto / span 1;
+}
