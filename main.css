@@ -8,23 +8,19 @@ body {
 /*  height: 100%;*/
 }
 
+h1, h2, h3, p {
+  color: white;
+  font-family: "Varela Round";
+}
+
 h1 {
-  color: white;
-  font-family: "Varela Round";
-}
-
-h3 {
-  color: white;
-  font-family: "Varela Round";
-}
-
-p {
-  color: white;
-  font-family: "Varela Round";
+  font-size: auto;
 }
 
 .screen-height {
-  height: 100vh
+  height: 100vh;
+  display: grid;
+  grid-template-rows: minmax(50px, 10%) 1fr;
 }
 
 
@@ -34,24 +30,21 @@ nav .title-container, footer .social-icons-container {
   place-items: center;
 }
 
+.title-container {
+  height: 100%;
+}
+
+
 
 
 .hero-container {
   display: grid;
-  height: 100%;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 2fr;
+  height: 100%;
 }
 
 .hero-segment {
-  display: grid;
-  place-items: center;
-  background-color: steelblue;
-  
-  color: white;
-  font-family: "Varela Round";
-  font-size: 75px;
-  
   grid-column: auto / span 2;
   grid-row: auto / span 2;
 }
@@ -60,8 +53,14 @@ nav .title-container, footer .social-icons-container {
   grid-column: auto / span 4;
 }
 
- .hero-container:hover .hero-segment:not(:hover) {
+.hero-container:hover .hero-segment:not(:hover) {
   grid-column: auto / span 1;
+}
+
+.hero-title {
+  writing-mode: vertical-rl;
+  margin: 0;
+  font-size: 10vh;
 }
 
 @media (max-width: 800px) {
@@ -79,6 +78,12 @@ nav .title-container, footer .social-icons-container {
     grid-row: auto / span 1;
     grid-column: auto / span 2
   }
+
+  .hero-title {
+    writing-mode: horizontal-tb;
+    font-size: 10vw;
+  }
+  
 }
 
 
