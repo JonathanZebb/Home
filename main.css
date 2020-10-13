@@ -4,20 +4,43 @@
 
 body {
   margin: 0px;
+  background-color: black;
+/*  height: 100%;*/
 }
+
+h1 {
+  color: white;
+  font-family: "Varela Round";
+}
+
+h3 {
+  color: white;
+  font-family: "Varela Round";
+}
+
+p {
+  color: white;
+  font-family: "Varela Round";
+}
+
+.screen-height {
+  height: 100vh
+}
+
+
+
+nav .title-container, footer .social-icons-container {
+  display: grid;
+  place-items: center;
+}
+
+
 
 .hero-container {
   display: grid;
-  height: 100vh;
+  height: 100%;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 1fr;
-}
-
-@media (max-width: 800px) {
-  .hero-container {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
-  }
+  grid-template-rows: 2fr;
 }
 
 .hero-segment {
@@ -33,12 +56,37 @@ body {
   grid-row: auto / span 2;
 }
 
-.hero-segment:hover {
+.hero-container:hover .hero-segment:hover {
   grid-column: auto / span 4;
-  grid-row: auto / span 4;
 }
 
  .hero-container:hover .hero-segment:not(:hover) {
   grid-column: auto / span 1;
-  grid-row: auto / span 1;
+}
+
+@media (max-width: 800px) {
+  .hero-container {
+    grid-template-columns: 2fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+  
+  .hero-container:hover .hero-segment:hover {
+    grid-row: auto / span 4;
+    grid-column: auto / span 2
+  }
+  
+  .hero-container:hover .hero-segment:not(:hover) {
+    grid-row: auto / span 1;
+    grid-column: auto / span 2
+  }
+}
+
+
+
+footer {
+  background-color: black;
+}
+
+.credit {
+  text-align: right;
 }
