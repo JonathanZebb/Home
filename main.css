@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  transition: grid-rows 4s, grid-columns 4s;
+
 }
 
 body {
@@ -45,8 +47,12 @@ nav .title-container, footer .social-icons-container {
 }
 
 .hero-segment {
+  display: grid;
   grid-column: auto / span 2;
   grid-row: auto / span 2;
+  justify-items: start;
+  overflow: hidden;
+  position: relative;
 }
 
 .hero-container:hover .hero-segment:hover {
@@ -57,11 +63,39 @@ nav .title-container, footer .social-icons-container {
   grid-column: auto / span 1;
 }
 
+.hero-link {
+  display: grid;
+  position: relative;
+}
+
 .hero-title {
   writing-mode: vertical-rl;
   margin: 0;
   font-size: 10vh;
+  position: absolute;
 }
+
+.hero-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  
+}
+
+#hero-segment-one .hero-img {
+  object-position: right;
+}
+
+#hero-segment-two .hero-img {
+  object-position: center;
+}
+
+#hero-segment-three .hero-img {
+  object-position: center;
+}
+
+
+
 
 @media (max-width: 800px) {
   .hero-container {
@@ -78,7 +112,11 @@ nav .title-container, footer .social-icons-container {
     grid-row: auto / span 1;
     grid-column: auto / span 2
   }
-
+  
+  .hero-segment {
+    align-items: end;
+  }
+  
   .hero-title {
     writing-mode: horizontal-tb;
     font-size: 10vw;
@@ -95,4 +133,3 @@ footer {
 .credit {
   text-align: right;
 }
-
