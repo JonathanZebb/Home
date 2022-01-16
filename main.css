@@ -1,0 +1,47 @@
+.gallery-container {
+    display: grid;
+    width: 100%;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 33vmin));
+    grid-gap: 1rem;
+    justify-content: center;
+}
+
+.gallery-image {
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+}
+
+.gallery-image > img {
+    height: 100%;
+}
+
+div.gallery-image:not(.tag-portrait) {
+/*    display: none;*/
+}
+#tagStorage {
+    display: none;
+}
+
+#tagStorage.tag-music ~ div:not(.tag-music) {
+    display: none;
+}
+
+#tagStorage.tag-food ~ div:not(.tag-food) {
+    display: none;
+}
+
+#tagStorage.tag-portraits ~ div:not(.tag-portraits) {
+    display: none;
+}
+
+#tagStorage.tag-christmas ~ div:not(.tag-christmas) {
+    display: none;
+}
+
+#tagStorage.tag-products ~ div:not(.tag-products) {
+    display: none;
+}
