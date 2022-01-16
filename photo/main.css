@@ -1,7 +1,31 @@
+.tag-selector {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+    justify-content: center;
+    
+    border-color: red;
+    border-width: 1px;
+    border-style: solid;
+    height: auto;
+}
+
+.tag-selector-button {
+    border: none;
+    margin: 5px;
+    aspect-ratio: 4/1;
+    border-radius: 5em;
+}
+
+
+
+
+
+
 .gallery-container {
     display: grid;
     width: 100%;
 }
+
 
 .gallery {
     display: grid;
@@ -10,18 +34,22 @@
     justify-content: center;
 }
 
+
 .gallery-image {
     aspect-ratio: 1 / 1;
     overflow: hidden;
 }
 
+
 .gallery-image > img {
     height: 100%;
 }
 
-div.gallery-image:not(.tag-portrait) {
-/*    display: none;*/
-}
+
+
+
+
+
 #tagStorage {
     display: none;
 }
