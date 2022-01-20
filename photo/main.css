@@ -5,18 +5,86 @@ body {
 
 a {
     text-decoration: none;
+/*
+    border-color: red;
+    border-width: 1px;
+    border-style: solid;
+*/
 }
 
 h1 {
-    font-family: Niconne;
-    color: #FFFFFF
+    
+    font-family: 'Niconne';
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 8vw;
+    white-space: nowrap;
+    
+    margin: 0 2vw;
+    
+/*
+    border-color: red;
+    border-width: 1px;
+    border-style: solid;
+*/
 }
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+    font-weight: 200;
+    font-size: 4vw;
+    white-space: nowrap;
+    
+    margin: 0;
+    
+/*
+    border-color: red;
+    border-width: 1px;
+    border-style: solid;
+*/
+}
+
 
 /*HEADER BAR*/
 .header {
     width: 100%;
     background-color: #131416;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));    
     
+}
+
+.nav-title-container {
+    width: auto;
+    display: grid;
+    align-content: center;
+    
+    
+    border-color: red;
+    border-width: 1px;
+    border-style: solid;
+}
+
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-color: red;
+    border-width: 1px;
+    border-style: solid;
+/*    height: 10px;*/
+    
+}
+
+.nav-button-container {
+    display: grid;
+    place-items: center;
+}
+
+.nav-button-container:hover {
+    background-color: #2AD4A1;
+    color: #131416;
 }
 
 
