@@ -1,0 +1,19 @@
+* {
+    font-family: 'Cabin Sketch', cursive;
+    font-weight: 400;
+    color: rgb(255 255 255);
+    font-size: 1.4em;
+    text-decoration: none;  
+}
+
+html {
+        background-color: rgb(19 20 22);
+
+}
+
+*:hover {
+    font-weight: 700;
+    color: rgb(255 255 255);
+        
+    background-color: rgb(24 25 28);
+}
