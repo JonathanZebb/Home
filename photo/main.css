@@ -83,7 +83,10 @@ nav {
 }
 
 .nav-button-container:hover {
-    background-color: #2AD4A1;
+    background-color: #FFFFFF;
+}
+
+.nav-button-container:hover .nav-button{
     color: #131416;
 }
 
