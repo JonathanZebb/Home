@@ -1,18 +1,49 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- Custom -->
         <link rel="stylesheet" href="main.css"/>
+        <title>Photo - jacob winter media.</title>
         
-        <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap" rel="stylesheet">
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Niconne&display=block" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;800&display=optional" rel="stylesheet">
+        
+        <!-- Video -->
+        <link href="https://vjs.zencdn.net/7.17.0/video-js.css" rel="stylesheet" />
     </head>
     <body>
-        <nav>
-            <h1><a href="/index.html">Jacob Winter</a></h1>
-            <ul>
-                <a href="/video/index.html">video</a>
-                <a href="/photo/index.html">photo</a>
-            </ul>
-        </nav>
-        <span>VIDEO</span>
+        <div class="header">
+            <a href="/index.html" class="nav-title-container"><h1>jacob winter media.</h1></a>
+            <nav>
+                <a class="nav-button-container" href="/video/index.html"><h2 class="nav-button">video</h2></a>
+                <a class="nav-button-container" href="/photo/index.html"><h2 class="nav-button">photo</h2></a>
+            </nav>
+        </div>
+        
+        <video
+            id="video-nightingale"
+            class="video-js"
+            controls
+            preload="auto"
+            width="640"
+            height="264"
+            poster="MY_VIDEO_POSTER.jpg"
+            data-setup="{}"
+        >
+            <source src="MY_VIDEO.mp4" type="video/mp4" />
+            <source src="MY_VIDEO.webm" type="video/webm" />
+            <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider upgrading to a
+                web browser that
+                <a href="https://videojs.com/html5-video-support/" target="_blank"
+                   >supports HTML5 video</a
+                    >
+            </p>
+        </video>
+
+  <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
     </body>
 </html>
