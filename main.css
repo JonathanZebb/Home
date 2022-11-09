@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'League Spartan Variable';
+  src: url('LeagueSpartan-VF.woff2') format('woff2-variations');
+  font-weight: 200 900;
+}
+
+body {
+    background-color: #131416;
+    margin: 0px ;
+}
+
+.logo {
+    font: 700 40px "League Spartan Variable"; 
+    width: 100%;
+}
+
+.logo-container {
+    width: 50%;
+    display: flex;
+    margin: auto;
+}
+
+.hero-container {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+
+.icon {
+    display: grid;
+    width: 100%;
+    padding: 10%;
+    transition: opacity 0.5s ease;
+}
+
+.socials:hover .icon:not(.icon:hover) {
+    opacity: 50%;
+}
+
+.socials {
+    width: 50%;
+    display: flex;
+    margin: auto;
+}
+
+.svg-container {
+     display: flex;
+}
