@@ -46,3 +46,17 @@ body {
 .svg-container {
      display: flex;
 }
+
+
+.text-container{
+    width: 50%;
+    display: flex;
+    margin: auto;}
+
+
+.text {
+    font: 400 20px "League Spartan Variable";
+    color: white;
+    text-align: center;
+    margin: auto;
+}
